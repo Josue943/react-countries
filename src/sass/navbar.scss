@@ -1,0 +1,21 @@
+@import "../index.scss";
+
+.navbar {
+  background: var(--bm);
+  padding: 30px 15px;
+  font-size: 9px;
+  overflow: hidden;
+  h1 {
+    display: inline;
+  }
+  h2 {
+    cursor: pointer;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    padding: 20px 80px;
+  }
+}

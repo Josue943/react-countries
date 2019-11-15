@@ -1,0 +1,172 @@
+@import "../index.scss";
+
+.container {
+  background: var(--bg);
+  padding: 35px 20px;
+  min-height: 100vh;
+}
+
+.botton-container {
+  .back {
+    background: var(--bm);
+    border: none;
+    padding: 8px 30px;
+    span {
+      padding-left: 10px;
+      font-weight: bold;
+    }
+    i {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+.flag-detail {
+  margin-top: 35px;
+  overflow: hidden;
+  .flag {
+    width: 335px;
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+.country-info {
+  margin-top: 15px;
+  padding-left: 0;
+  h1 {
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+.info {
+  h3 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+
+.info-2 {
+  margin-top: 30px;
+  h3 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+
+.borders {
+  margin-top: 35px;
+  h1 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .country-borders {
+    display: inline-block;
+    span {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 30%;
+      background: var(--bm);
+      padding: 5px 20px;
+      font-size: 12px;
+    }
+  }
+}
+
+/* span + span {
+    margin-left: 16px;
+} */
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    // padding: 20px 80px;
+    padding: 20px 80px 50px 80px;
+    display: inline-block;
+    width: 1440px;
+  }
+  .botton-container {
+    margin-top: 20px;
+  }
+  .flag-detail {
+    float: left;
+    .flag {
+      width: 600px;
+      height: 400px;
+    }
+  }
+  .country-info {
+    float: left;
+    margin-left: 130px;
+    margin-top: 70px;
+    h1 {
+      font-size: 21px;
+    }
+  }
+  .info {
+    float: left;
+    h3 {
+      font-size: 15px;
+    }
+  }
+
+  .info-2 {
+    margin-top: 0px;
+    margin-left: 300px;
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .borders {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    padding: 20px 80px 50px 80px;
+    display: inline-block;
+    width: 1920px;
+  }
+  .flag-detail {
+    .flag {
+      width: 900px;
+      height: 600px;
+    }
+  }
+  .botton-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .back {
+      padding: 15px 35px;
+      font-size: 16px;
+    }
+  }
+  .country-info {
+    margin-left: 150px;
+    margin-top: 120px;
+    h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .info {
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .info-2 {
+    margin-left: 380px;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .borders {
+    margin-top: 100px;
+  }
+}

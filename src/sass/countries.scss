@@ -1,0 +1,33 @@
+@import "../index.scss";
+
+.countries-list {
+  background: var(--bg);
+}
+
+.search {
+  padding: 20px 10px;
+  display: grid;
+}
+
+.cards {
+  padding: 10px 40px;
+  display: grid;
+  min-height: 100vh;
+}
+
+.pagination {
+  background: var(--bg);
+}
+
+@media screen and (min-width: 1440px) {
+  .cards {
+    padding-left: 80px;
+    padding-right: 0px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .search {
+    padding-left: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
