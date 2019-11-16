@@ -80,6 +80,12 @@ select {
     width: 30%;
     float: right;
     margin-top: 0;
-    margin-right: 60px;
+    margin-right: 85px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  select {
+    margin-right: 95px;
   }
 }

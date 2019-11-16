@@ -23,11 +23,19 @@
   .cards {
     padding-left: 80px;
     padding-right: 0px;
+    margin-left: 50px;
     grid-template-columns: repeat(4, 1fr);
   }
-
   .search {
+    padding-top: 30px;
     padding-left: 80px;
+    margin-bottom: 15px;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .cards {
+    padding: 5px 32px;
   }
 }

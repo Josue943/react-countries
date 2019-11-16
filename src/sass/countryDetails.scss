@@ -4,6 +4,7 @@
   background: var(--bg);
   padding: 35px 20px;
   min-height: 100vh;
+  width: 100%;
 }
 
 .botton-container {
@@ -72,7 +73,10 @@
       display: inline-block;
       width: 30%;
       background: var(--bm);
-      padding: 5px 20px;
+      // padding: 5px 26px;
+      height: 20px;
+      width: 95px;
+      text-align: center;
       font-size: 12px;
     }
   }
@@ -87,10 +91,11 @@
     // padding: 20px 80px;
     padding: 20px 80px 50px 80px;
     display: inline-block;
-    width: 1440px;
+    //width: 1440px;
   }
   .botton-container {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
   }
   .flag-detail {
     float: left;
@@ -101,8 +106,9 @@
   }
   .country-info {
     float: left;
-    margin-left: 130px;
-    margin-top: 70px;
+    margin-left: 90px;
+    margin-top: 90px;
+    width: 570px;
     h1 {
       font-size: 21px;
     }
@@ -116,7 +122,7 @@
 
   .info-2 {
     margin-top: 0px;
-    margin-left: 300px;
+    margin-left: 290px;
     h3 {
       font-size: 15px;
     }
@@ -130,7 +136,7 @@
   .container {
     padding: 20px 80px 50px 80px;
     display: inline-block;
-    width: 1920px;
+    //width: 1920px;
   }
   .flag-detail {
     .flag {
@@ -147,8 +153,9 @@
     }
   }
   .country-info {
-    margin-left: 150px;
+    margin-left: 87px;
     margin-top: 120px;
+    width: 750px;
     h1 {
       font-size: 30px;
       margin-bottom: 30px;
