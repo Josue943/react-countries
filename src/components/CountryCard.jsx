@@ -12,7 +12,7 @@ export default function CountryCard({ country }) {
         </Link>
       </div>
       <div className="country-main-info">
-        <h3 className="name">{name}</h3>
+        <h3 className="name">{name.substr(0, 20)}</h3>
         <h5>Population: {population.toLocaleString("en")}</h5>
         <h5>Region: {region}</h5>
         <h5>Capital: {capital}</h5>
