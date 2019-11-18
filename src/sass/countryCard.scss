@@ -39,7 +39,6 @@
   .card {
     width: 100%;
     margin-bottom: 70px;
-    max-height: 350px;
     .country-main-info {
       h3 {
         font-size: 22px;
@@ -49,4 +48,13 @@
       }
     }
   }
+}
+@media screen and (min-width:1920px){
+  .card {
+     .img-container {
+      img {
+        height: 210px;
+      }
+    } 
+}
 }
