@@ -1,179 +1,200 @@
 @import "../index.scss";
 
-.container {
-  background: var(--bg);
-  padding: 35px 20px;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.botton-container {
-  .back {
+.button-container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  .button {
     background: var(--bm);
+    width: 35%;
+    height: 37px;
     border: none;
-    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 3px;
     span {
       padding-left: 10px;
-      font-weight: bold;
-    }
-    i {
-      font-size: 15px;
-      font-weight: bold;
     }
   }
 }
-
-.flag-detail {
-  margin-top: 35px;
-  overflow: hidden;
-  .flag {
-    width: 335px;
-    height: 220px;
+.country-flag {
+  img {
+    width: 100%;
+    height: 230px;
     object-fit: cover;
   }
 }
 
 .country-info {
-  margin-top: 15px;
-  padding-left: 0;
+  padding-top: 40px;
   h1 {
-    font-size: 20px;
-    margin-left: 0;
-    margin-bottom: 15px;
+    font-size: 23px;
+    padding-bottom: 20px;
   }
-}
-.info {
   h3 {
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 8px;
+  }
+  .info-2 {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .borders {
+    h1 {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .country-borders {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 0.5rem;
+      padding-bottom: 50px;
+      span {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        background: var(--bm);
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+    }
   }
 }
+/**/
 
-.info-2 {
-  margin-top: 30px;
-  h3 {
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 8px;
+@media screen and (min-width: 768px) {
+  .button-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .button {
+      width: 20%;
+    }
   }
-}
-
-.borders {
-  margin-top: 35px;
-  h1 {
-    font-size: 14px;
-    margin-bottom: 15px;
+  .detail-container {
+    width: 90%;
+    margin: auto;
   }
-  .country-borders {
+  .country-flag {
+    img {
+      height: 310px;
+    }
+  }
+  .country-info {
+    width: 100%;
+    padding-top: 30px;
     display: inline-block;
-    span {
-      margin-left: 10px;
-      margin-bottom: 10px;
-      display: inline-block;
-      width: 30%;
-      background: var(--bm);
-      // padding: 5px 26px;
-      height: 20px;
-      width: 95px;
+    h1 {
       text-align: center;
-      font-size: 12px;
+      font-size: 26px;
+    }
+    .info {
+      text-align: center;
+      margin-right: 0;
+      width: 50%;
+      float: left;
+    }
+    .info-2 {
+      //margin-left: -100px;
+      text-align: center;
+
+      width: 50%;
+      float: right;
+    }
+  }
+
+  .borders {
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+    h1 {
+      float: left;
+      font-size: 16px;
+      font-weight: 300;
+      margin-right: 15px;
+    }
+    .country-borders {
+      grid-template-columns: repeat(4, 1fr) !important;
+      padding-bottom: 50px;
+      span {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        background: var(--bm);
+        padding: 8px;
+        margin-bottom: 8px;
+      }
     }
   }
 }
 
-/* span + span {
-    margin-left: 16px;
-} */
-
-@media only screen and (min-width: 1440px) {
-  .container {
-    // padding: 20px 80px;
-    padding: 20px 80px 50px 80px;
-    display: inline-block;
-    //width: 1440px;
+/**/
+@media screen and (min-width: 1440px) {
+  .button-container {
+    width: 100%;
+    padding-bottom: 50px;
+    .button {
+      width: 10%;
+    }
   }
-  .botton-container {
-    margin-top: 40px;
-    margin-bottom: 10px;
+  .detail-container {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    flex-wrap: wrap;
+    grid-column-gap: 8rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .flag-detail {
-    float: left;
-    .flag {
-      width: 600px;
+  .country-flag {
+    img {
       height: 400px;
     }
   }
   .country-info {
-    float: left;
-    margin-left: 90px;
-    margin-top: 90px;
-    width: 570px;
-    h1 {
-      font-size: 21px;
-    }
-  }
-  .info {
-    float: left;
-    h3 {
-      font-size: 15px;
-    }
-  }
-
-  .info-2 {
-    margin-top: 0px;
-    margin-left: 290px;
-    h3 {
-      font-size: 15px;
-    }
-  }
-  .borders {
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .container {
-    padding: 20px 80px 50px 80px;
+    padding-top: 50px;
     display: inline-block;
-    //width: 1920px;
-  }
-  .flag-detail {
-    .flag {
-      width: 900px;
-      height: 600px;
-    }
-  }
-  .botton-container {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    .back {
-      padding: 15px 35px;
-      font-size: 16px;
-    }
-  }
-  .country-info {
-    margin-left: 87px;
-    margin-top: 120px;
-    width: 750px;
     h1 {
-      font-size: 30px;
-      margin-bottom: 30px;
+      text-align: left;
+      font-size: 26px;
     }
-  }
-  .info {
-    h3 {
-      font-size: 20px;
+    .info {
+      text-align: left;
+      width: 50%;
+      float: left;
+    }
+    .info-2 {
+      padding-top: 0px;
+      text-align: left;
+      width: 50%;
+      float: right;
     }
   }
 
-  .info-2 {
-    margin-left: 380px;
-    h3 {
-      font-size: 20px;
-    }
-  }
   .borders {
-    margin-top: 100px;
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+    h1 {
+      float: left;
+      font-size: 16px;
+      font-weight: 300;
+      margin-right: 15px;
+    }
+    .country-borders {
+      grid-template-columns: repeat(4, 1fr) !important;
+      padding-bottom: 50px;
+      span {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        background: var(--bm);
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+    }
   }
 }

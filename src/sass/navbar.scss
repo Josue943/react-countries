@@ -1,31 +1,30 @@
 @import "../index.scss";
 
-.navbar {
+nav {
   background: var(--bm);
-  padding: 25px 15px;
-  font-size: 9px;
-  overflow: hidden;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 80px;
+    padding-top: 30px;
+  }
   h1 {
-    display: inline;
-  }
-  h2 {
-    cursor: pointer;
-    float: right;
-    margin-right: 15px;
+    font-size: 16px;
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .navbar {
-    font-size: 14px;
-    padding: 20px 80px;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .navbar {
+@media screen and(min-width:1440px) {
+  nav {
+    .container {
+      padding-top: 30px;
+    }
+    h1 {
+      font-size: 24px;
+    }
     h2 {
-      margin-right: 28px;
+      font-size: 18px;
     }
   }
 }

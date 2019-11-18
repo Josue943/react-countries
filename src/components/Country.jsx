@@ -42,15 +42,13 @@ export default class Country extends Component {
       borders
     } = this.state;
     return (
-      <div>
-        <CountryDetails
-          country={country}
-          languages={languages}
-          borders={borders}
-          currencies={currencies}
-          topLevelDomain={topLevelDomain}
-        />
-      </div>
+      <CountryDetails
+        country={country}
+        languages={languages}
+        borders={borders}
+        currencies={currencies}
+        topLevelDomain={topLevelDomain}
+      />
     );
   }
 }

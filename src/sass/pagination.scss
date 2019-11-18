@@ -1,8 +1,9 @@
 @import "../index.scss";
 
 .pagination {
+  background: var(--bg);
   list-style: none;
-  text-align: right;
+  text-align: center;
   padding: 10px;
   .page {
     /*se pongan a la par*/
@@ -31,5 +32,8 @@
   .pagination {
     padding: 0px;
     text-align: center;
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
